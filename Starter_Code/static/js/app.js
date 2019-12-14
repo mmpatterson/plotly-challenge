@@ -37,7 +37,7 @@ function init() {
 function metaData(subject) {
     // Demographic Info
     var sampleMeta = fileData.metadata.filter(obj => obj.id == subject)[0];
-    console.log(sampleMeta);
+    // console.log(sampleMeta);
     var selection = d3.select('#sample-metadata');
     selection.html("");
     Object.entries(sampleMeta).forEach(([key, value]) => {
