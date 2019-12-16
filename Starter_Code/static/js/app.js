@@ -1,14 +1,14 @@
-filePath = '../../samples.json';
+filePath = 'samples.json';
 
 var fileData;
 
 // Load in data from csv
 d3.json(filePath).then(info => {
     fileData = info;
-    // console.log('Printing filePath data:');
-    // console.log(fileData);
-    // console.log('Names:');
-    // console.log(fileData.names);
+    console.log('Printing filePath data:');
+    console.log(fileData);
+    console.log('Names:');
+    console.log(fileData.names);
     d3.selectAll("body").on("change", init());
 });
 
