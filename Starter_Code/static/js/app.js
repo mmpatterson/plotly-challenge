@@ -141,6 +141,3 @@ function optionChanged(sample) {
     buildPlot(sample);
 
 }
-
-// // Initialize data
-// init();
